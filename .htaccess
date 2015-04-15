@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^usnap.json$ /usnap.php [P,L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
